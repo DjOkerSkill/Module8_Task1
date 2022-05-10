@@ -12,7 +12,7 @@ namespace ConsoleApp6
 
             FileInfo[] fl = di.GetFiles();
 
-            foreach (FileInfo fi in fl)
+            foreach (FileInfo fi in fl) 
             {
                 TimeSpan deltatime = DateTime.Now - File.GetLastWriteTime(fi.FullName);
                 
